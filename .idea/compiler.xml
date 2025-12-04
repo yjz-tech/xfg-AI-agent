@@ -11,20 +11,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xfg-dev-tech-app" />
-        <module name="xfg-dev-tech-api" />
         <module name="xfg-dev-tech-trigger" />
+        <module name="xfg-dev-tech-api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17">
-      <module name="ear" target="1.5" />
-      <module name="ejbs" target="1.5" />
-      <module name="logging" target="1.5" />
-      <module name="primary-source" target="1.5" />
-      <module name="project" target="1.5" />
-      <module name="projects" target="1.5" />
-      <module name="servlet" target="1.5" />
-      <module name="servlets" target="1.5" />
-      <module name="untitled" target="17" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AI_agent" options="-parameters" />
+      <module name="xfg-dev-tech-api" options="-parameters" />
+      <module name="xfg-dev-tech-app" options="-parameters" />
+      <module name="xfg-dev-tech-trigger" options="-parameters" />
+    </option>
   </component>
 </project>
