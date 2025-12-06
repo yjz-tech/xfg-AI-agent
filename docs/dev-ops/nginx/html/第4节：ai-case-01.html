@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI 对话助手</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            assistant: '#f3f4f6',
+            user: '#dbeafe'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .message {
+      max-width: 80%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+    .user-message {
+      align-self: flex-end;
+      background-color: #dbeafe;
+      border-bottom-right-radius: 4px;
+    }
+    .assistant-message {
+      align-self: flex-start;
+      background-color: #f3f4f6;
+      border-bottom-left-radius: 4px;
+    }
+    .streaming::after {
+      content: '▋';
+      animation: blink 1s infinite;
+      margin-left: 4px;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+<div class="container mx-auto px-4 py-6 flex flex-col flex-1">
+  <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">AI-agent 对话助手</h1>
+
+  <!-- 聊天消息区域 -->
+  <div id="chatContainer" class="flex-1 overflow-y-auto mb-4 space-y-4 message-container">
+    <!-- 消息将动态插入此处 -->
+  </div>
+
+  <!-- 输入区域 -->
+  <div class="border-t pt-4">
+    <div class="flex gap-2">
+      <input
+              type="text"
+              id="userInput"
+              placeholder="输入你的问题..."
+              class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              disabled
+      />
+      <button
+              id="sendButton"
+              class="px-6 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 transition disabled:opacity-50"
+              disabled
+      >
+        发送
+      </button>
+    </div>
+    <div class="mt-2 text-sm text-gray-500">
+      模型: <span id="currentModel">deepseek-r1:1.5b</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const chatContainer = document.getElementById('chatContainer');
+  const userInput = document.getElementById('userInput');
+  const sendButton = document.getElementById('sendButton');
+  const currentModelEl = document.getElementById('currentModel');
+
+  const API_BASE = 'http://localhost:8090/api/v1/ollama/generate_stream';
+  const MODEL = 'deepseek-r1:1.5b'; // 可配置
+
+  let isStreaming = false;
+
+  // 初始化
+  currentModelEl.textContent = MODEL;
+  enableInput();
+
+  function enableInput() {
+    userInput.disabled = false;
+    sendButton.disabled = false;
+    userInput.focus();
+  }
+
+  function disableInput() {
+    userInput.disabled = true;
+    sendButton.disabled = true;
+  }
+
+  function addMessage(text, isUser = false) {
+    const messageDiv = document.createElement('div');
+    messageDiv.classList.add('message', isUser ? 'user-message' : 'assistant-message');
+    messageDiv.textContent = text;
+    chatContainer.appendChild(messageDiv);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    return messageDiv;
+  }
+
+  function updateLastMessage(text) {
+    const messages = chatContainer.querySelectorAll('.assistant-message');
+    if (messages.length > 0) {
+      const last = messages[messages.length - 1];
+      last.textContent = text;
+      last.classList.add('streaming');
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+  }
+
+  function finishStreaming() {
+    const messages = chatContainer.querySelectorAll('.assistant-message.streaming');
+    messages.forEach(el => el.classList.remove('streaming'));
+    isStreaming = false;
+    enableInput();
+  }
+
+  async function sendMessage() {
+    const message = userInput.value.trim();
+    if (!message || isStreaming) return;
+
+    // 清空输入
+    userInput.value = '';
+    disableInput();
+    isStreaming = true;
+
+    // 添加用户消息
+    addMessage(message, true);
+
+    // 添加 AI 占位符
+    const aiMessageEl = addMessage('', false);
+    aiMessageEl.classList.add('streaming');
+
+    // 构造 URL
+    const encodedMessage = encodeURIComponent(message);
+    const apiUrl = `${API_BASE}?model=${encodeURIComponent(MODEL)}&message=${encodedMessage}`;
+
+    // 使用 EventSource 接收流
+    const eventSource = new EventSource(apiUrl);
+
+    let fullResponse = '';
+
+    eventSource.onmessage = (event) => {
+      try {
+        // 后端返回的是 JSON 数组，取第一个元素
+        const data = JSON.parse(event.data);
+        const item = Array.isArray(data) ? data[0] : data;
+
+        const content = item?.result?.output?.content || '';
+        const finishReason = item?.result?.metadata?.finishReason;
+
+        if (content) {
+          fullResponse += content;
+          updateLastMessage(fullResponse);
+        }
+
+        if (finishReason === 'STOP') {
+          eventSource.close();
+          finishStreaming();
+        }
+      } catch (e) {
+        console.error('解析 SSE 数据失败:', e, event.data);
+      }
+    };
+
+    eventSource.onerror = (err) => {
+      console.error('SSE 连接错误:', err);
+      eventSource.close();
+      finishStreaming();
+      if (fullResponse === '') {
+        updateLastMessage('[连接失败，请重试]');
+      }
+    };
+  }
+
+  // 事件绑定
+  sendButton.addEventListener('click', sendMessage);
+  userInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') sendMessage();
+  });
+</script>
+</body>
+</html>

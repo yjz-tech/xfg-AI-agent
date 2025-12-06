@@ -155,3 +155,107 @@ java.lang.NullPointerException: Cannot invoke "org.springframework.ai.ollama.Oll
 25-12-05.21:19:46.026 [HikariCP housekeeper] WARN  HikariPool             - HikariCP - Thread starvation or clock leap detected (housekeeper delta=5m20s161ms746µs800ns).
 25-12-05.23:04:54.761 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
 25-12-05.23:04:54.768 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-05.23:27:22.056 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 33356 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.23:27:22.058 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.23:27:22.706 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.23:27:22.709 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.23:27:22.733 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-05.23:27:23.369 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.23:27:23.386 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.23:27:23.387 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.23:27:23.387 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.23:27:23.479 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.23:27:23.479 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1248 ms
+25-12-05.23:27:24.124 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.23:27:24.608 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:27:25.325 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:27:25.729 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStore' defined in class path resource [org/springframework/ai/autoconfigure/vectorstore/pgvector/PgVectorStoreAutoConfiguration.class]: Unsatisfied dependency expressed through method 'vectorStore' parameter 1: No qualifying bean of type 'org.springframework.ai.embedding.EmbeddingClient' available: expected single matching bean but found 2: ollamaEmbeddingClient,openAiEmbeddingClient
+25-12-05.23:27:25.738 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-12-05.23:27:25.746 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-12-05.23:27:25.759 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method vectorStore in org.springframework.ai.autoconfigure.vectorstore.pgvector.PgVectorStoreAutoConfiguration required a single bean, but 2 were found:
+	- ollamaEmbeddingClient: defined by method 'ollamaEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class]
+	- openAiEmbeddingClient: defined by method 'openAiEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/openai/OpenAiAutoConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+25-12-05.23:29:59.191 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 19624 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.23:29:59.194 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.23:29:59.797 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.23:29:59.799 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.23:29:59.821 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-12-05.23:30:00.358 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.23:30:00.365 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.23:30:00.367 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.23:30:00.367 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.23:30:00.463 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.23:30:00.463 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1116 ms
+25-12-05.23:30:01.033 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.23:30:01.672 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:30:02.611 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:30:03.006 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStore' defined in class path resource [org/springframework/ai/autoconfigure/vectorstore/pgvector/PgVectorStoreAutoConfiguration.class]: Unsatisfied dependency expressed through method 'vectorStore' parameter 1: No qualifying bean of type 'org.springframework.ai.embedding.EmbeddingClient' available: expected single matching bean but found 2: ollamaEmbeddingClient,openAiEmbeddingClient
+25-12-05.23:30:03.017 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-12-05.23:30:03.024 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-12-05.23:30:03.038 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method vectorStore in org.springframework.ai.autoconfigure.vectorstore.pgvector.PgVectorStoreAutoConfiguration required a single bean, but 2 were found:
+	- ollamaEmbeddingClient: defined by method 'ollamaEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class]
+	- openAiEmbeddingClient: defined by method 'openAiEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/openai/OpenAiAutoConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+25-12-05.23:33:06.824 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 13140 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.23:33:06.826 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.23:33:07.264 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.23:33:07.266 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.23:33:07.293 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-12-05.23:33:07.640 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.23:33:07.648 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.23:33:07.650 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.23:33:07.651 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.23:33:07.720 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.23:33:07.720 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+25-12-05.23:33:08.205 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.23:33:08.705 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:33:09.418 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:33:09.884 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-05.23:33:09.894 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-05.23:33:09.900 [main            ] INFO  Application            - Started Application in 3.478 seconds (process running for 3.895)
+25-12-05.23:33:18.259 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-12-05.23:33:18.259 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-12-05.23:33:18.260 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms

@@ -22,6 +22,7 @@ services:
     restart: always
     hostname: redis
     privileged: true
+
     ports:
       - 16379:6379
     volumes:
