@@ -1,0 +1,141 @@
+25-12-06.11:18:54.480 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+25-12-06.11:18:54.506 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 18756 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-06.11:18:54.508 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
+25-12-06.11:18:55.427 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:18:55.430 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:18:55.457 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-12-06.11:18:56.414 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:18:57.838 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@20869506
+25-12-06.11:18:57.840 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:19:00.247 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:19:00.801 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:19:02.683 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:19:03.733 [main            ] INFO  RAGTest                - Started RAGTest in 9.714 seconds (process running for 10.641)
+25-12-06.11:19:07.095 [main            ] INFO  RAGTest                - 上传完成
+25-12-06.11:19:07.122 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.11:19:07.124 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.11:19:16.948 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+25-12-06.11:19:16.973 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 28768 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-06.11:19:16.974 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
+25-12-06.11:19:17.874 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:19:17.877 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:19:17.905 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-12-06.11:19:18.805 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:19:19.904 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@1fd61b81
+25-12-06.11:19:19.907 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:19:21.296 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:19:21.813 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:19:22.445 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:19:23.424 [main            ] INFO  RAGTest                - Started RAGTest in 6.932 seconds (process running for 7.819)
+25-12-06.11:19:24.116 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.11:19:24.118 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.11:21:04.670 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+25-12-06.11:21:04.694 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 10496 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-06.11:21:04.695 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
+25-12-06.11:21:05.570 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:21:05.573 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:21:05.598 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-06.11:21:06.491 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:21:07.615 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6be06c7e
+25-12-06.11:21:07.617 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:21:08.764 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:21:09.232 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:21:09.967 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:21:10.882 [main            ] INFO  RAGTest                - Started RAGTest in 6.653 seconds (process running for 7.494)
+25-12-06.11:21:11.572 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.11:21:11.574 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.11:22:11.240 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+25-12-06.11:22:11.266 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 21660 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-06.11:22:11.267 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
+25-12-06.11:22:12.129 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:22:12.131 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:22:12.156 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-06.11:22:13.036 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:22:14.380 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@239c7565
+25-12-06.11:22:14.384 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:22:16.552 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:22:17.098 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:22:17.969 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:22:18.901 [main            ] INFO  RAGTest                - Started RAGTest in 8.135 seconds (process running for 9.004)
+25-12-06.11:22:19.617 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.11:22:19.620 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.11:23:25.486 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+25-12-06.11:23:25.514 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 29960 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-06.11:23:25.516 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
+25-12-06.11:23:26.389 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:23:26.392 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:23:26.420 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-12-06.11:23:27.299 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:23:28.301 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6be06c7e
+25-12-06.11:23:28.305 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:23:29.982 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:23:30.469 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:23:31.731 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:23:32.674 [main            ] INFO  RAGTest                - Started RAGTest in 7.653 seconds (process running for 8.483)
+25-12-06.11:24:11.241 [main            ] INFO  RAGTest                - 测试结果
+25-12-06.11:24:11.262 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.11:24:11.264 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.11:24:54.728 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+25-12-06.11:24:54.755 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 4976 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-06.11:24:54.757 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
+25-12-06.11:24:55.600 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:24:55.603 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:24:55.633 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-12-06.11:24:56.541 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:24:57.941 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@1c4e4735
+25-12-06.11:24:57.947 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:25:00.376 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:25:01.055 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:25:02.856 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:25:03.805 [main            ] INFO  RAGTest                - Started RAGTest in 9.532 seconds (process running for 10.385)
+25-12-06.11:25:27.784 [main            ] INFO  RAGTest                - 测试结果:{"metadata":{"promptMetadata":{},"rateLimit":{"requestsLimit":0,"requestsRemaining":0,"requestsReset":{"nano":0,"negative":false,"seconds":0,"units":["SECONDS","NANOS"],"zero":true},"tokensLimit":0,"tokensRemaining":0,"tokensReset":{"$ref":"$.metadata.rateLimit.requestsReset"}},"usage":{"generationTokens":0,"promptTokens":0,"totalTokens":0}},"result":{"metadata":{"contentFilterMetadata":{"generationTokens":119,"promptTokens":76,"totalTokens":195},"finishReason":"unknown"},"output":{"content":"<think>\n首先，我看到用户询问“王大瓜，哪年出生了”，并且提供了之前的对话内容。\n\n根据提供的“ DOCUMENTS”信息，“王大瓜1990年出生”。\n\n接下来，按照指示，我需要回答用户的问题，并且必须以中文回复。同时，不能过于武断或含糊其辞，应如实地给出准确答案。\n\n考虑到用户可能对某些信息不太确定，我会先确认王大瓜的出生年份，并确保回答准确无误。\n</think>\n\n王大瓜是1990年出生的人。","media":[],"messageType":"ASSISTANT","properties":{}}},"results":[{"$ref":"$.metadata.rateLimit.result"}]}
+25-12-06.11:25:27.806 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.11:25:27.808 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.

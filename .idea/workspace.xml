@@ -14,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,9 +61,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "4-stream-ui",
+    "git-widget-placeholder": "5-rag",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "F:/CODE/JAVA/program/xfg/ai-rag-knowledge/AI_agent/xfg-dev-tech-app/src/main/java/cn/bugstack/xfg/dev/tech/config",
+    "last_opened_file_path": "F:/CODE/JAVA/program/xfg/ai-rag-knowledge/AI_agent/docs/dev-ops/pgvector",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +74,9 @@
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
     "GitStage.ChangesTree.GroupingKeys": [
       "directory",
       "module",
@@ -83,10 +86,43 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\docs\dev-ops\pgvector" />
       <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\src\main\java\cn\bugstack\xfg\dev\tech\config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RAGTest.chat">
+    <configuration name="RAGTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
+      <option name="METHOD_NAME" value="chat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RAGTest.upload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xfg-dev-tech-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.xfg.dev.tech.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.xfg.dev.tech.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.xfg.dev.tech.test.RAGTest" />
+      <option name="METHOD_NAME" value="upload" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="xfg-dev-tech-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.xfg.dev.tech.Application" />
@@ -104,6 +140,12 @@
       <option name="showConsole" value="true" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RAGTest.chat" />
+        <item itemvalue="JUnit.RAGTest.upload" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -144,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764834959460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="第四节 Ollama DeepSeek Ai构建简单页面">
+      <option name="closed" value="true" />
+      <created>1764987571167</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764987571167</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始" />
     <MESSAGE value="第二节 初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二节 初始化" />
+    <MESSAGE value="第四节 Ollama DeepSeek Ai构建简单页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四节 Ollama DeepSeek Ai构建简单页面" />
   </component>
 </project>

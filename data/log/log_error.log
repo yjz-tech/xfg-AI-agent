@@ -153,3 +153,4 @@ You may need to update both your build tool settings as well as your IDE.
 (See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
 
 
+25-12-06.12:20:31.986 [HikariCP housekeeper] WARN  HikariPool             - HikariCP - Thread starvation or clock leap detected (housekeeper delta=10m21s946ms707µs).
