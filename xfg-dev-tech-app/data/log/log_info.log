@@ -1,4 +1,4 @@
-25-12-06.11:18:54.480 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-12-12.17:32:36.976 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -7,22 +7,57 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-12-06.11:18:54.506 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 18756 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
-25-12-06.11:18:54.508 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-12-06.11:18:55.427 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-06.11:18:55.430 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-06.11:18:55.457 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-25-12-06.11:18:56.414 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-12-06.11:18:57.838 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@20869506
-25-12-06.11:18:57.840 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-12-06.11:19:00.247 [main            ] INFO  Version                - Redisson 3.44.0
-25-12-06.11:19:00.801 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:19:02.683 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:19:03.733 [main            ] INFO  RAGTest                - Started RAGTest in 9.714 seconds (process running for 10.641)
-25-12-06.11:19:07.095 [main            ] INFO  RAGTest                - 上传完成
-25-12-06.11:19:07.122 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-12-06.11:19:07.124 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-12-06.11:19:16.948 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-12-12.17:32:36.999 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.9 with PID 23548 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-12.17:32:37.001 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-12-12.17:32:37.914 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.17:32:37.917 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.17:32:37.950 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-12-12.17:32:38.958 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-12.17:32:40.028 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@41a57497
+25-12-12.17:32:40.030 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-12.17:32:43.879 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-12.17:32:44.396 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:32:45.544 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:32:46.486 [main            ] INFO  JGitTest               - Started JGitTest in 10.006 seconds (process running for 11.01)
+25-12-12.17:32:47.138 [main            ] INFO  JGitTest               - 文件路径:data\log\log-error-2025-12-06.0.log
+25-12-12.17:32:47.741 [main            ] INFO  TextSplitter           - Splitting up document into 2 chunks.
+25-12-12.17:32:47.742 [main            ] INFO  JGitTest               - 文件路径:data\log\log-info-2025-12-06.0.log
+25-12-12.17:32:47.808 [main            ] INFO  TextSplitter           - Splitting up document into 7 chunks.
+25-12-12.17:32:47.808 [main            ] INFO  JGitTest               - 文件路径:data\log\log_error.log
+25-12-12.17:32:47.843 [main            ] INFO  JGitTest               - 文件路径:data\log\log_info.log
+25-12-12.17:32:47.875 [main            ] INFO  TextSplitter           - Splitting up document into 2 chunks.
+25-12-12.17:32:47.875 [main            ] INFO  JGitTest               - 文件路径:pom.xml
+25-12-12.17:32:47.904 [main            ] INFO  TextSplitter           - Splitting up document into 2 chunks.
+25-12-12.17:32:47.905 [main            ] INFO  JGitTest               - 文件路径:src\main\java\cn\bugstack\xfg\dev\tech\Application.java
+25-12-12.17:32:47.933 [main            ] INFO  JGitTest               - 文件路径:src\main\java\cn\bugstack\xfg\dev\tech\config\OllamaConfig.java
+25-12-12.17:32:47.963 [main            ] INFO  JGitTest               - 文件路径:src\main\java\cn\bugstack\xfg\dev\tech\config\RedisClientConfig.java
+25-12-12.17:32:47.997 [main            ] INFO  JGitTest               - 文件路径:src\main\java\cn\bugstack\xfg\dev\tech\config\RedisClientConfigProperties.java
+25-12-12.17:32:48.026 [main            ] INFO  JGitTest               - 文件路径:src\main\java\cn\bugstack\xfg\dev\tech\package-info.java
+25-12-12.17:32:48.051 [main            ] INFO  JGitTest               - 文件路径:src\main\resources\application-dev.yml
+25-12-12.17:32:48.080 [main            ] INFO  JGitTest               - 文件路径:src\main\resources\application-prod.yml
+25-12-12.17:32:48.110 [main            ] INFO  JGitTest               - 文件路径:src\main\resources\application-test.yml
+25-12-12.17:32:48.135 [main            ] INFO  JGitTest               - 文件路径:src\main\resources\application.yml
+25-12-12.17:32:48.161 [main            ] INFO  JGitTest               - 文件路径:src\main\resources\logback-spring.xml
+25-12-12.17:32:48.194 [main            ] INFO  JGitTest               - 文件路径:src\test\java\cn\bugstack\xfg\dev\tech\test\JGitTest.java
+25-12-12.17:32:48.232 [main            ] INFO  JGitTest               - 文件路径:src\test\java\cn\bugstack\xfg\dev\tech\test\RAGTest.java
+25-12-12.17:32:48.261 [main            ] INFO  JGitTest               - 文件路径:src\test\resources\data\file.text
+25-12-12.17:32:48.286 [main            ] INFO  JGitTest               - 文件路径:target\classes\application-dev.yml
+25-12-12.17:32:48.311 [main            ] INFO  JGitTest               - 文件路径:target\classes\application-prod.yml
+25-12-12.17:32:48.338 [main            ] INFO  JGitTest               - 文件路径:target\classes\application-test.yml
+25-12-12.17:32:48.363 [main            ] INFO  JGitTest               - 文件路径:target\classes\application.yml
+25-12-12.17:32:48.388 [main            ] INFO  JGitTest               - 文件路径:target\classes\cn\bugstack\xfg\dev\tech\Application.class
+25-12-12.17:32:48.431 [main            ] INFO  JGitTest               - 文件路径:target\classes\cn\bugstack\xfg\dev\tech\config\OllamaConfig.class
+25-12-12.17:32:48.457 [main            ] INFO  JGitTest               - 文件路径:target\classes\cn\bugstack\xfg\dev\tech\config\RedisClientConfig.class
+25-12-12.17:32:48.480 [main            ] INFO  JGitTest               - 文件路径:target\classes\cn\bugstack\xfg\dev\tech\config\RedisClientConfigProperties.class
+25-12-12.17:32:48.505 [main            ] INFO  JGitTest               - 文件路径:target\classes\logback-spring.xml
+25-12-12.17:32:48.531 [main            ] INFO  JGitTest               - 文件路径:target\classes\META-INF\spring-configuration-metadata.json
+25-12-12.17:32:48.559 [main            ] INFO  JGitTest               - 文件路径:target\test-classes\cn\bugstack\xfg\dev\tech\test\JGitTest$1.class
+25-12-12.17:32:48.585 [main            ] INFO  JGitTest               - 文件路径:target\test-classes\cn\bugstack\xfg\dev\tech\test\JGitTest.class
+25-12-12.17:32:48.610 [main            ] INFO  JGitTest               - 文件路径:target\test-classes\cn\bugstack\xfg\dev\tech\test\RAGTest.class
+25-12-12.17:32:48.636 [main            ] INFO  JGitTest               - 文件路径:target\test-classes\data\file.text
+25-12-12.17:32:48.694 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-12.17:32:48.697 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-12.17:34:17.804 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -31,21 +66,22 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-12-06.11:19:16.973 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 28768 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
-25-12-06.11:19:16.974 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-12-06.11:19:17.874 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-06.11:19:17.877 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-06.11:19:17.905 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-25-12-06.11:19:18.805 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-12-06.11:19:19.904 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@1fd61b81
-25-12-06.11:19:19.907 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-12-06.11:19:21.296 [main            ] INFO  Version                - Redisson 3.44.0
-25-12-06.11:19:21.813 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:19:22.445 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:19:23.424 [main            ] INFO  RAGTest                - Started RAGTest in 6.932 seconds (process running for 7.819)
-25-12-06.11:19:24.116 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-12-06.11:19:24.118 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-12-06.11:21:04.670 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-12-12.17:34:17.821 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.9 with PID 20704 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-12.17:34:17.822 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-12-12.17:34:18.680 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.17:34:18.683 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.17:34:18.710 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+25-12-12.17:34:19.562 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-12.17:34:20.506 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@4c497366
+25-12-12.17:34:20.508 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-12.17:34:21.757 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-12.17:34:22.661 [redisson-netty-1-9] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:34:22.993 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:34:23.961 [main            ] INFO  JGitTest               - Started JGitTest in 6.656 seconds (process running for 7.575)
+25-12-12.17:34:24.571 [main            ] INFO  JGitTest               - 克隆路径: F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\.\cloned-repo
+25-12-12.17:34:30.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-12.17:34:30.448 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-12.17:37:16.372 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -54,21 +90,25 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-12-06.11:21:04.694 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 10496 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
-25-12-06.11:21:04.695 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-12-06.11:21:05.570 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-06.11:21:05.573 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-06.11:21:05.598 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-25-12-06.11:21:06.491 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-12-06.11:21:07.615 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6be06c7e
-25-12-06.11:21:07.617 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-12-06.11:21:08.764 [main            ] INFO  Version                - Redisson 3.44.0
-25-12-06.11:21:09.232 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:21:09.967 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:21:10.882 [main            ] INFO  RAGTest                - Started RAGTest in 6.653 seconds (process running for 7.494)
-25-12-06.11:21:11.572 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-12-06.11:21:11.574 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-12-06.11:22:11.240 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
+25-12-12.17:37:16.394 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.9 with PID 20008 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-12.17:37:16.394 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-12-12.17:37:17.253 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.17:37:17.256 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.17:37:17.284 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-12-12.17:37:18.124 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-12.17:37:19.236 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@41a57497
+25-12-12.17:37:19.240 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-12.17:37:20.971 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-12.17:37:21.388 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:37:22.353 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:37:23.290 [main            ] INFO  JGitTest               - Started JGitTest in 7.389 seconds (process running for 8.33)
+25-12-12.17:37:23.923 [main            ] INFO  JGitTest               - 文件路径:cloned-repo\.git\config
+25-12-12.17:37:24.480 [main            ] INFO  JGitTest               - 文件路径:cloned-repo\.git\FETCH_HEAD
+25-12-12.17:37:24.513 [main            ] INFO  JGitTest               - 文件路径:cloned-repo\.git\HEAD
+25-12-12.17:37:24.543 [main            ] INFO  JGitTest               - 文件路径:cloned-repo\.git\index
+25-12-12.17:37:24.608 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-12.17:37:24.611 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-12.17:41:23.454 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
@@ -77,65 +117,235 @@ Found multiple occurrences of org.json.JSONObject on the class path:
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-25-12-06.11:22:11.266 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 21660 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
-25-12-06.11:22:11.267 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-12-06.11:22:12.129 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-06.11:22:12.131 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-06.11:22:12.156 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
-25-12-06.11:22:13.036 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-12-06.11:22:14.380 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@239c7565
-25-12-06.11:22:14.384 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-12-06.11:22:16.552 [main            ] INFO  Version                - Redisson 3.44.0
-25-12-06.11:22:17.098 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:22:17.969 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:22:18.901 [main            ] INFO  RAGTest                - Started RAGTest in 8.135 seconds (process running for 9.004)
-25-12-06.11:22:19.617 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-12-06.11:22:19.620 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-12-06.11:23:25.486 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
-
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-25-12-06.11:23:25.514 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 29960 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
-25-12-06.11:23:25.516 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-12-06.11:23:26.389 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-06.11:23:26.392 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-06.11:23:26.420 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-25-12-06.11:23:27.299 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-12-06.11:23:28.301 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6be06c7e
-25-12-06.11:23:28.305 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-12-06.11:23:29.982 [main            ] INFO  Version                - Redisson 3.44.0
-25-12-06.11:23:30.469 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:23:31.731 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:23:32.674 [main            ] INFO  RAGTest                - Started RAGTest in 7.653 seconds (process running for 8.483)
-25-12-06.11:24:11.241 [main            ] INFO  RAGTest                - 测试结果
-25-12-06.11:24:11.262 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-12-06.11:24:11.264 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
-25-12-06.11:24:54.728 [main            ] WARN  DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer - 
-
-Found multiple occurrences of org.json.JSONObject on the class path:
-
-	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/F:/develop/apache-maven-3.9.9/mvn_repo/org/json/json/20231013/json-20231013.jar!/org/json/JSONObject.class
-
-You may wish to exclude one of them to ensure predictable runtime behavior
-
-25-12-06.11:24:54.755 [main            ] INFO  RAGTest                - Starting RAGTest using Java 17.0.9 with PID 4976 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
-25-12-06.11:24:54.757 [main            ] INFO  RAGTest                - The following 1 profile is active: "dev"
-25-12-06.11:24:55.600 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-06.11:24:55.603 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-06.11:24:55.633 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-25-12-06.11:24:56.541 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
-25-12-06.11:24:57.941 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@1c4e4735
-25-12-06.11:24:57.947 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
-25-12-06.11:25:00.376 [main            ] INFO  Version                - Redisson 3.44.0
-25-12-06.11:25:01.055 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:25:02.856 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
-25-12-06.11:25:03.805 [main            ] INFO  RAGTest                - Started RAGTest in 9.532 seconds (process running for 10.385)
-25-12-06.11:25:27.784 [main            ] INFO  RAGTest                - 测试结果:{"metadata":{"promptMetadata":{},"rateLimit":{"requestsLimit":0,"requestsRemaining":0,"requestsReset":{"nano":0,"negative":false,"seconds":0,"units":["SECONDS","NANOS"],"zero":true},"tokensLimit":0,"tokensRemaining":0,"tokensReset":{"$ref":"$.metadata.rateLimit.requestsReset"}},"usage":{"generationTokens":0,"promptTokens":0,"totalTokens":0}},"result":{"metadata":{"contentFilterMetadata":{"generationTokens":119,"promptTokens":76,"totalTokens":195},"finishReason":"unknown"},"output":{"content":"<think>\n首先，我看到用户询问“王大瓜，哪年出生了”，并且提供了之前的对话内容。\n\n根据提供的“ DOCUMENTS”信息，“王大瓜1990年出生”。\n\n接下来，按照指示，我需要回答用户的问题，并且必须以中文回复。同时，不能过于武断或含糊其辞，应如实地给出准确答案。\n\n考虑到用户可能对某些信息不太确定，我会先确认王大瓜的出生年份，并确保回答准确无误。\n</think>\n\n王大瓜是1990年出生的人。","media":[],"messageType":"ASSISTANT","properties":{}}},"results":[{"$ref":"$.metadata.rateLimit.result"}]}
-25-12-06.11:25:27.806 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
-25-12-06.11:25:27.808 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-12.17:41:23.478 [main            ] INFO  JGitTest               - Starting JGitTest using Java 17.0.9 with PID 25416 (started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app)
+25-12-12.17:41:23.479 [main            ] INFO  JGitTest               - The following 1 profile is active: "dev"
+25-12-12.17:41:24.325 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-12.17:41:24.328 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-12.17:41:24.356 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-12-12.17:41:25.230 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-12.17:41:26.394 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@39adb7a5
+25-12-12.17:41:26.398 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-12.17:41:27.827 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-12.17:41:28.380 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:41:29.197 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-12.17:41:30.158 [main            ] INFO  JGitTest               - Started JGitTest in 7.153 seconds (process running for 8.045)
+25-12-12.17:41:30.808 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-api\pom.xml
+25-12-12.17:41:31.331 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-api\pom.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.332 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-api\src\main\java\com\bugstack\api\dto\package-info.java
+25-12-12.17:41:31.399 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-api\src\main\java\com\bugstack\api\dto\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.399 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-api\src\main\java\com\bugstack\api\package-info.java
+25-12-12.17:41:31.427 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-api\src\main\java\com\bugstack\api\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.427 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-api\src\main\java\com\bugstack\api\response\Response.java
+25-12-12.17:41:31.456 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-api\src\main\java\com\bugstack\api\response\Response.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.457 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\pom.xml
+25-12-12.17:41:31.487 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\pom.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.488 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\Application.java
+25-12-12.17:41:31.514 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\Application.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.514 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\GuavaConfig.java
+25-12-12.17:41:31.541 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\GuavaConfig.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.541 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\package-info.java
+25-12-12.17:41:31.574 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.574 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\ThreadPoolConfig.java
+25-12-12.17:41:31.604 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\ThreadPoolConfig.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.604 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\ThreadPoolConfigProperties.java
+25-12-12.17:41:31.635 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\config\ThreadPoolConfigProperties.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.635 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\package-info.java
+25-12-12.17:41:31.660 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\java\com\bugstack\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.660 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application-dev.yml
+25-12-12.17:41:31.685 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application-dev.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.685 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application-prod.yml
+25-12-12.17:41:31.712 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application-prod.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.712 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application-test.yml
+25-12-12.17:41:31.738 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application-test.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.739 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application.yml
+25-12-12.17:41:31.765 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\application.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.765 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\logback-spring.xml
+25-12-12.17:41:31.802 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\logback-spring.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.803 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\config\mybatis-config.xml
+25-12-12.17:41:31.836 [main            ] WARN  JGitTest               - 处理文件失败: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\config\mybatis-config.xml
+java.lang.RuntimeException: java.lang.IllegalArgumentException: content must not be null
+	at org.springframework.ai.reader.tika.TikaDocumentReader.get(TikaDocumentReader.java:150)
+	at cn.bugstack.xfg.dev.tech.test.JGitTest$1.visitFile(JGitTest.java:131)
+	at cn.bugstack.xfg.dev.tech.test.JGitTest$1.visitFile(JGitTest.java:100)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at cn.bugstack.xfg.dev.tech.test.JGitTest.test_file(JGitTest.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.IllegalArgumentException: content must not be null
+	at org.springframework.util.Assert.hasText(Assert.java:240)
+	at org.springframework.ai.document.Document.<init>(Document.java:84)
+	at org.springframework.ai.document.Document.<init>(Document.java:79)
+	at org.springframework.ai.document.Document.<init>(Document.java:75)
+	at org.springframework.ai.document.Document.<init>(Document.java:71)
+	at org.springframework.ai.reader.tika.TikaDocumentReader.toDocument(TikaDocumentReader.java:162)
+	at org.springframework.ai.reader.tika.TikaDocumentReader.get(TikaDocumentReader.java:147)
+	... 38 common frames omitted
+25-12-12.17:41:31.840 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\award_mapper.xml
+25-12-12.17:41:31.864 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\award_mapper.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.864 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\strategy_award_mapper.xml
+25-12-12.17:41:31.888 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\strategy_award_mapper.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.889 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\strategy_mapper.xml
+25-12-12.17:41:31.913 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\strategy_mapper.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.913 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\strategy_rule_mapper.xml
+25-12-12.17:41:31.939 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\main\resources\mybatis\mapper\strategy_rule_mapper.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.940 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\test\java\com\bugstack\test\ApiTest.java
+25-12-12.17:41:31.964 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\test\java\com\bugstack\test\ApiTest.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.965 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-app\src\test\java\com\bugstack\test\infrastructure\AwardDaoTest.java
+25-12-12.17:41:31.996 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-app\src\test\java\com\bugstack\test\infrastructure\AwardDaoTest.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:31.997 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\pom.xml
+25-12-12.17:41:32.025 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\pom.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.025 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\adapter\package-info.java
+25-12-12.17:41:32.052 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\adapter\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.053 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\adapter\repository\package-info.java
+25-12-12.17:41:32.078 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\adapter\repository\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.078 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\model\aggregate\package-info.java
+25-12-12.17:41:32.102 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\model\aggregate\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.102 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\model\entity\package-info.java
+25-12-12.17:41:32.127 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\model\entity\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.129 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\model\valobj\package-info.java
+25-12-12.17:41:32.153 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\model\valobj\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.153 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\service\package-info.java
+25-12-12.17:41:32.178 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\xxx\service\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.180 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\model\aggregate\package-info.java
+25-12-12.17:41:32.213 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\model\aggregate\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.213 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\model\entity\package-info.java
+25-12-12.17:41:32.245 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\model\entity\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.245 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\model\valobj\package-info.java
+25-12-12.17:41:32.275 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\model\valobj\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.275 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\service\package-info.java
+25-12-12.17:41:32.302 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-domain\src\main\java\com\bugstack\domain\yyy\service\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.302 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\pom.xml
+25-12-12.17:41:32.327 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\pom.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.329 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\adapter\port\package-info.java
+25-12-12.17:41:32.354 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\adapter\port\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.354 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\adapter\repository\package-info.java
+25-12-12.17:41:32.377 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\adapter\repository\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.378 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IAwardDao.java
+25-12-12.17:41:32.401 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IAwardDao.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.401 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IStrategyAwardDao.java
+25-12-12.17:41:32.430 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IStrategyAwardDao.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.430 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IStrategyDao.java
+25-12-12.17:41:32.457 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IStrategyDao.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.457 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IStrategyRuleDao.java
+25-12-12.17:41:32.482 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\dao\IStrategyRuleDao.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.482 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\package-info.java
+25-12-12.17:41:32.506 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.506 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\Award.java
+25-12-12.17:41:32.533 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\Award.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.533 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\Strategy.java
+25-12-12.17:41:32.558 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\Strategy.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.558 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\StrategyAward.java
+25-12-12.17:41:32.580 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\StrategyAward.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.580 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\StrategyRule.java
+25-12-12.17:41:32.605 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\dao\po\StrategyRule.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.606 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\gateway\dto\package-info.java
+25-12-12.17:41:32.628 [main            ] WARN  JGitTest               - 处理文件失败: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\gateway\dto\package-info.java
+java.lang.RuntimeException: org.apache.tika.exception.ZeroByteFileException: InputStream must have > 0 bytes
+	at org.springframework.ai.reader.tika.TikaDocumentReader.get(TikaDocumentReader.java:150)
+	at cn.bugstack.xfg.dev.tech.test.JGitTest$1.visitFile(JGitTest.java:131)
+	at cn.bugstack.xfg.dev.tech.test.JGitTest$1.visitFile(JGitTest.java:100)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2811)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2882)
+	at cn.bugstack.xfg.dev.tech.test.JGitTest.test_file(JGitTest.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:76)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:252)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.apache.tika.exception.ZeroByteFileException: InputStream must have > 0 bytes
+	at org.apache.tika.parser.AutoDetectParser.parse(AutoDetectParser.java:189)
+	at org.springframework.ai.reader.tika.TikaDocumentReader.get(TikaDocumentReader.java:146)
+	... 38 common frames omitted
+25-12-12.17:41:32.629 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\gateway\package-info.java
+25-12-12.17:41:32.657 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\gateway\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.658 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\redis\package-info.java
+25-12-12.17:41:32.681 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-infrastructure\src\main\java\com\bugstack\infrastructure\redis\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.682 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-trigger\pom.xml
+25-12-12.17:41:32.706 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-trigger\pom.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.707 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-trigger\src\main\java\com\bugstack\trigger\http\package-info.java
+25-12-12.17:41:32.730 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-trigger\src\main\java\com\bugstack\trigger\http\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.730 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-trigger\src\main\java\com\bugstack\trigger\job\package-info.java
+25-12-12.17:41:32.754 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-trigger\src\main\java\com\bugstack\trigger\job\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.754 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-trigger\src\main\java\com\bugstack\trigger\listener\package-info.java
+25-12-12.17:41:32.777 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-trigger\src\main\java\com\bugstack\trigger\listener\package-info.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.777 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-types\pom.xml
+25-12-12.17:41:32.801 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-types\pom.xml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.801 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-types\src\main\java\com\bugstack\types\common\Constants.java
+25-12-12.17:41:32.825 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-types\src\main\java\com\bugstack\types\common\Constants.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.825 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-types\src\main\java\com\bugstack\types\enums\ResponseCode.java
+25-12-12.17:41:32.850 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-types\src\main\java\com\bugstack\types\enums\ResponseCode.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.850 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\DDD_bigmarket-types\src\main\java\com\bugstack\types\exception\AppException.java
+25-12-12.17:41:32.875 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\DDD_bigmarket-types\src\main\java\com\bugstack\types\exception\AppException.java, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.876 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\docs\dev-ops\docker-compose-app.yml
+25-12-12.17:41:32.903 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\docs\dev-ops\docker-compose-app.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.904 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\docs\dev-ops\docker-compose-environment-aliyun.yml
+25-12-12.17:41:32.930 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\docs\dev-ops\docker-compose-environment-aliyun.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.930 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\docs\dev-ops\docker-compose-environment.yml
+25-12-12.17:41:32.954 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\docs\dev-ops\docker-compose-environment.yml, 文档数: 1, 分块数: 1
+25-12-12.17:41:32.954 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\pom.xml
+25-12-12.17:41:32.978 [main            ] INFO  TextSplitter           - Splitting up document into 2 chunks.
+25-12-12.17:41:32.978 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\pom.xml, 文档数: 1, 分块数: 2
+25-12-12.17:41:32.978 [main            ] INFO  JGitTest               - 正在处理文件: cloned-repo\README.md
+25-12-12.17:41:33.002 [main            ] INFO  JGitTest               - 成功处理文件: cloned-repo\README.md, 文档数: 1, 分块数: 1
+25-12-12.17:41:33.027 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-12.17:41:33.029 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
