@@ -55,6 +55,7 @@
         </dependency>
 
         <dependency>
+<!--            这个包相当于通过查找代码,执行Git的命令,拉取下来-->
             <groupId>org.eclipse.jgit</groupId>
             <artifactId>org.eclipse.jgit</artifactId>
         </dependency>

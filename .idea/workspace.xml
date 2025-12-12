@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
       </list>
@@ -50,47 +51,48 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "5-rag",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "F:/CODE/JAVA/program/xfg/ai-rag-knowledge/AI_agent/docs/dev-ops/pgvector",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "settings.editor.splitter.proportion": "0.29249012",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;7-stream-rag-ui&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/CODE/JAVA/program/xfg/ai-rag-knowledge/AI_agent/docs/dev-ops/nginx/html&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.29249012&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\docs\dev-ops\nginx\html" />
       <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\docs\dev-ops\pgvector" />
       <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\src\main\java\cn\bugstack\xfg\dev\tech\config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RAGTest.chat">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="RAGTest.chat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xfg-dev-tech-app" />
       <extension name="coverage">
@@ -142,15 +144,17 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RAGTest.upload" />
         <item itemvalue="JUnit.RAGTest.chat" />
         <item itemvalue="JUnit.RAGTest.upload" />
+        <item itemvalue="JUnit.RAGTest.chat" />
+        <item itemvalue="JUnit.RAGTest.chat" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="77b34feb-a01e-4bbe-b767-c6c089806939" name="更改" comment="" />
       <created>1761145647592</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -161,6 +165,8 @@
       <workItem from="1764812413532" duration="2440000" />
       <workItem from="1764818261615" duration="1619000" />
       <workItem from="1764819907906" duration="15303000" />
+      <workItem from="1765009166194" duration="7163000" />
+      <workItem from="1765529149872" duration="575000" />
     </task>
     <task id="LOCAL-00001" summary="初始">
       <option name="closed" value="true" />
@@ -194,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764987571167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="第六节: Ollama RAG 知识库接口服务实现">
+      <option name="closed" value="true" />
+      <created>1765008935340</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765008935340</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +241,7 @@
     <MESSAGE value="初始" />
     <MESSAGE value="第二节 初始化" />
     <MESSAGE value="第四节 Ollama DeepSeek Ai构建简单页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="第四节 Ollama DeepSeek Ai构建简单页面" />
+    <MESSAGE value="第六节: Ollama RAG 知识库接口服务实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="第六节: Ollama RAG 知识库接口服务实现" />
   </component>
 </project>

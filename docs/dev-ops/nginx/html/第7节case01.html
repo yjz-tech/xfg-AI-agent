@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AI Chat</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sidebar: '#1f2937',
+                        primary: '#3b82f6',
+                        assistant: '#f3f4f6',
+                        user: '#dbeafe'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .message-content {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .scroll-bottom {
+            scroll-behavior: smooth;
+        }
+        textarea:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex h-screen overflow-hidden">
+<!-- 左侧聊天列表 -->
+<div id="sidebar" class="w-64 bg-sidebar text-white flex flex-col">
+    <div class="p-4 border-b border-gray-700">
+        <button id="newChatBtn" class="w-full bg-primary hover:bg-blue-500 text-white py-2 px-4 rounded-md text-sm font-medium transition">
+            + 新建聊天
+        </button>
+    </div>
+    <div id="chatList" class="flex-1 overflow-y-auto p-2 space-y-2">
+        <!-- 聊天项将动态插入此处 -->
+    </div>
+</div>
+
+<!-- 主聊天区域 -->
+<div class="flex-1 flex flex-col">
+    <!-- 聊天标题栏 -->
+    <div id="chatHeader" class="bg-white border-b p-4 hidden">
+        <div class="flex items-center justify-between">
+            <h2 id="currentChatTitle" class="text-lg font-semibold text-gray-800">新聊天</h2>
+            <div class="flex space-x-2">
+                <button id="renameBtn" class="text-gray-500 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                    </svg>
+                </button>
+                <button id="deleteBtn" class="text-red-500 hover:text-red-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 消息区域 -->
+    <div id="messages" class="flex-1 overflow-y-auto p-4 scroll-bottom space-y-4 bg-gray-50">
+        <!-- 消息将动态插入 -->
+    </div>
+
+    <!-- 输入区域 -->
+    <div class="p-4 bg-white border-t">
+        <form id="chatForm" class="flex gap-2">
+        <textarea
+                id="messageInput"
+                placeholder="输入消息..."
+                class="flex-1 border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary resize-none"
+                rows="1"
+                disabled
+        ></textarea>
+            <button
+                    type="submit"
+                    id="sendBtn"
+                    class="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium disabled:opacity-50"
+                    disabled
+            >
+                发送
+            </button>
+        </form>
+        <div id="statusBar" class="mt-2 text-xs text-gray-500 text-right"></div>
+    </div>
+</div>
+
+<!-- 模态框：重命名 -->
+<div id="renameModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg w-80">
+        <h3 class="text-lg font-medium mb-4">重命名聊天</h3>
+        <input
+                type="text"
+                id="renameInput"
+                class="w-full border border-gray-300 rounded px-3 py-2 mb-4"
+                maxlength="30"
+        />
+        <div class="flex justify-end space-x-2">
+            <button id="cancelRename" class="px-4 py-2 text-gray-600">取消</button>
+            <button id="confirmRename" class="px-4 py-2 bg-primary text-white rounded">确定</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ======================
+    // 全局配置
+    // ======================
+    let chats = JSON.parse(localStorage.getItem('aiChats')) || [];
+    let currentChatId = null;
+    const API_URL = 'http://localhost:8090/api/v1/ollama/generate_stream';
+    let eventSource = null; // 用于管理当前连接
+
+    // DOM 元素
+    const chatListEl = document.getElementById('chatList');
+    const messagesEl = document.getElementById('messages');
+    const messageInput = document.getElementById('messageInput');
+    const chatForm = document.getElementById('chatForm');
+    const sendBtn = document.getElementById('sendBtn');
+    const newChatBtn = document.getElementById('newChatBtn');
+    const chatHeader = document.getElementById('chatHeader');
+    const currentChatTitle = document.getElementById('currentChatTitle');
+    const renameBtn = document.getElementById('renameBtn');
+    const deleteBtn = document.getElementById('deleteBtn');
+    const renameModal = document.getElementById('renameModal');
+    const renameInput = document.getElementById('renameInput');
+    const cancelRename = document.getElementById('cancelRename');
+    const confirmRename = document.getElementById('confirmRename');
+    const statusBar = document.getElementById('statusBar');
+
+    // ======================
+    // 工具函数
+    // ======================
+    function generateId() {
+        return Date.now().toString(36) + Math.random().toString(36).substr(2);
+    }
+
+    function saveChats() {
+        localStorage.setItem('aiChats', JSON.stringify(chats));
+    }
+
+    function scrollToBottom() {
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function updateStatus(text) {
+        statusBar.textContent = text;
+    }
+
+    // ======================
+    // 聊天操作
+    // ======================
+    function createNewChat() {
+        const newChat = {
+            id: generateId(),
+            title: '新聊天',
+            messages: []
+        };
+        chats.unshift(newChat);
+        saveChats();
+        switchToChat(newChat.id);
+        renderChatList();
+    }
+
+    function switchToChat(chatId) {
+        // 关闭之前的连接（如果存在）
+        if (eventSource) {
+            eventSource.close();
+            eventSource = null;
+        }
+
+        currentChatId = chatId;
+        const chat = chats.find(c => c.id === chatId);
+        if (!chat) return;
+
+        chatHeader.classList.remove('hidden');
+        currentChatTitle.textContent = chat.title;
+        renderMessages(chat.messages);
+
+        messageInput.disabled = false;
+        sendBtn.disabled = false;
+        messageInput.focus();
+        updateStatus('');
+    }
+
+    function deleteChat(chatId) {
+        if (chats.length <= 1) {
+            alert('至少保留一个聊天。');
+            return;
+        }
+        if (!confirm('确定删除此聊天？')) return;
+
+        chats = chats.filter(c => c.id !== chatId);
+        saveChats();
+
+        if (currentChatId === chatId) {
+            switchToChat(chats[0].id);
+        }
+        renderChatList();
+    }
+
+    function renameChat(chatId, newTitle) {
+        const chat = chats.find(c => c.id === chatId);
+        if (chat && newTitle.trim()) {
+            chat.title = newTitle.trim();
+            saveChats();
+            renderChatList();
+            if (currentChatId === chatId) {
+                currentChatTitle.textContent = chat.title;
+            }
+        }
+    }
+
+    // ======================
+    // 渲染
+    // ======================
+    function renderChatList() {
+        chatListEl.innerHTML = '';
+        chats.forEach(chat => {
+            const el = document.createElement('div');
+            el.className = `p-3 rounded cursor-pointer hover:bg-gray-700 transition ${currentChatId === chat.id ? 'bg-gray-700' : ''}`;
+            el.textContent = chat.title;
+            el.title = chat.title;
+            el.onclick = () => switchToChat(chat.id);
+            chatListEl.appendChild(el);
+        });
+    }
+
+    function renderMessages(messages) {
+        messagesEl.innerHTML = '';
+        messages.forEach(msg => {
+            const msgEl = document.createElement('div');
+            msgEl.className = `flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`;
+
+            const bubble = document.createElement('div');
+            bubble.className = `max-w-[80%] rounded-2xl px-4 py-2 ${
+                msg.role === 'user'
+                    ? 'bg-user text-gray-800 rounded-br-none'
+                    : 'bg-assistant text-gray-800 rounded-bl-none'
+            }`;
+
+            const content = document.createElement('pre');
+            content.className = 'message-content';
+            content.textContent = msg.content || '';
+            bubble.appendChild(content);
+            msgEl.appendChild(bubble);
+            messagesEl.appendChild(msgEl);
+        });
+        scrollToBottom();
+    }
+
+    // ======================
+    // 核心：发送消息 & 流式处理
+    // ======================
+    function sendMessage(userMessage) {
+        if (!userMessage.trim() || !currentChatId) return;
+
+        const chat = chats.find(c => c.id === currentChatId);
+        if (!chat) return;
+
+        // 添加用户消息
+        chat.messages.push({ role: 'user', content: userMessage });
+        saveChats();
+        renderMessages(chat.messages);
+
+        // 添加 AI 占位符
+        chat.messages.push({ role: 'assistant', content: '' });
+        renderMessages(chat.messages);
+
+        // 构造请求 URL
+        const params = new URLSearchParams({
+            model: 'deepseek-r1:1.5b',
+            message: userMessage
+        });
+        const url = `${API_URL}?${params.toString()}`;
+
+        updateStatus('正在思考...');
+
+        // 关闭旧连接（防止重复）
+        if (eventSource) {
+            eventSource.close();
+        }
+
+        // 创建新的 EventSource
+        eventSource = new EventSource(url);
+
+        eventSource.onmessage = (event) => {
+            try {
+                // ✅ 关键修复：event.data 是单个 ChatResponse 对象，不是数组！
+                const response = JSON.parse(event.data);
+                const result = response.result;
+
+                if (!result) return;
+
+                const content = result.output?.content || '';
+                // 检查 finishReason 的两个可能位置
+                const finishReason =
+                    result.metadata?.finishReason ||
+                    result.output?.properties?.finishReason;
+
+                // 更新 AI 消息内容
+                const currentChat = chats.find(c => c.id === currentChatId);
+                if (currentChat && currentChat.messages.length > 0) {
+                    const lastMsg = currentChat.messages[currentChat.messages.length - 1];
+                    if (lastMsg.role === 'assistant') {
+                        lastMsg.content += content;
+                        saveChats();
+                        renderMessages(currentChat.messages);
+                    }
+                }
+
+                // 结束判断
+                if (finishReason === 'STOP') {
+                    eventSource.close();
+                    eventSource = null;
+                    updateStatus('');
+                }
+            } catch (e) {
+                console.error('解析 SSE 数据失败:', e, '原始数据:', event.data);
+                updateStatus('⚠️ 接收回复出错');
+            }
+        };
+
+        eventSource.onerror = (err) => {
+            console.error('SSE 连接错误:', err);
+            updateStatus('❌ 连接失败，请检查后端是否运行');
+            if (eventSource) {
+                eventSource.close();
+                eventSource = null;
+            }
+        };
+    }
+
+    // ======================
+    // 事件绑定
+    // ======================
+    newChatBtn.addEventListener('click', createNewChat);
+
+    chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const text = messageInput.value.trim();
+        if (text) {
+            sendMessage(text);
+            messageInput.value = '';
+            messageInput.style.height = 'auto';
+        }
+    });
+
+    messageInput.addEventListener('input', () => {
+        messageInput.style.height = 'auto';
+        messageInput.style.height = Math.min(messageInput.scrollHeight, 100) + 'px';
+    });
+
+    messageInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            chatForm.dispatchEvent(new Event('submit'));
+        }
+    });
+
+    renameBtn.addEventListener('click', () => {
+        const chat = chats.find(c => c.id === currentChatId);
+        if (chat) {
+            renameInput.value = chat.title;
+            renameModal.classList.remove('hidden');
+        }
+    });
+
+    deleteBtn.addEventListener('click', () => {
+        if (currentChatId) deleteChat(currentChatId);
+    });
+
+    cancelRename.addEventListener('click', () => {
+        renameModal.classList.add('hidden');
+    });
+
+    confirmRename.addEventListener('click', () => {
+        const newTitle = renameInput.value.trim();
+        if (newTitle && currentChatId) {
+            renameChat(currentChatId, newTitle);
+        }
+        renameModal.classList.add('hidden');
+    });
+
+    renameModal.addEventListener('click', (e) => {
+        if (e.target === renameModal) {
+            renameModal.classList.add('hidden');
+        }
+    });
+
+    // ======================
+    // 初始化
+    // ======================
+    if (chats.length === 0) {
+        createNewChat();
+    } else {
+        switchToChat(chats[0].id);
+    }
+    renderChatList();
+</script>
+</body>
+</html>
