@@ -1,0 +1,334 @@
+25-12-05.13:42:49.221 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 28624 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.13:42:49.223 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.13:42:49.948 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.13:42:49.952 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.13:42:49.978 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-05.13:42:50.681 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.13:42:50.690 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.13:42:50.692 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.13:42:50.692 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.13:42:50.785 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.13:42:50.785 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1382 ms
+25-12-05.13:42:51.206 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-05.13:42:53.174 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@6e1f3bb9
+25-12-05.13:42:53.175 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-05.13:42:57.058 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.13:42:57.484 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.13:42:58.602 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.13:42:59.116 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-05.13:42:59.125 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-05.13:42:59.131 [main            ] INFO  Application            - Started Application in 10.406 seconds (process running for 11.11)
+25-12-05.13:45:17.843 [http-nio-8090-exec-2] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-12-05.13:45:17.843 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-12-05.13:45:17.844 [http-nio-8090-exec-2] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-12-05.13:45:17.879 [http-nio-8090-exec-2] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.ai.ollama.OllamaChatClient.stream(org.springframework.ai.chat.prompt.Prompt)" because "this.chatClient" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.ai.ollama.OllamaChatClient.stream(org.springframework.ai.chat.prompt.Prompt)" because "this.chatClient" is null
+	at cn.bugstack.xfg.dev.tech.trigger.http.OllamaController.generateStream(OllamaController.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-12-05.13:46:06.283 [http-nio-8090-exec-4] ERROR [dispatcherServlet]    - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.springframework.ai.ollama.OllamaChatClient.stream(org.springframework.ai.chat.prompt.Prompt)" because "this.chatClient" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.ai.ollama.OllamaChatClient.stream(org.springframework.ai.chat.prompt.Prompt)" because "this.chatClient" is null
+	at cn.bugstack.xfg.dev.tech.trigger.http.OllamaController.generateStream(OllamaController.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+25-12-05.13:49:04.933 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-05.13:49:04.935 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-05.13:49:16.237 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 26928 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.13:49:16.238 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.13:49:16.885 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.13:49:16.887 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.13:49:16.911 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-12-05.13:49:17.515 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.13:49:17.534 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.13:49:17.535 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.13:49:17.535 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.13:49:17.630 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.13:49:17.630 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1219 ms
+25-12-05.13:49:18.009 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-05.13:49:19.181 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@45b6800a
+25-12-05.13:49:19.182 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-05.13:49:21.202 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.13:49:21.773 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.13:49:22.454 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.13:49:22.925 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-05.13:49:22.933 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-05.13:49:22.938 [main            ] INFO  Application            - Started Application in 7.141 seconds (process running for 7.686)
+25-12-05.13:49:29.355 [http-nio-8090-exec-3] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-12-05.13:49:29.355 [http-nio-8090-exec-3] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-12-05.13:49:29.356 [http-nio-8090-exec-3] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-12-05.21:19:46.026 [HikariCP housekeeper] WARN  HikariPool             - HikariCP - Thread starvation or clock leap detected (housekeeper delta=5m20s161ms746µs800ns).
+25-12-05.23:04:54.761 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-05.23:04:54.768 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-05.23:27:22.056 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 33356 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.23:27:22.058 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.23:27:22.706 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.23:27:22.709 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.23:27:22.733 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-05.23:27:23.369 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.23:27:23.386 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.23:27:23.387 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.23:27:23.387 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.23:27:23.479 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.23:27:23.479 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1248 ms
+25-12-05.23:27:24.124 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.23:27:24.608 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:27:25.325 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:27:25.729 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStore' defined in class path resource [org/springframework/ai/autoconfigure/vectorstore/pgvector/PgVectorStoreAutoConfiguration.class]: Unsatisfied dependency expressed through method 'vectorStore' parameter 1: No qualifying bean of type 'org.springframework.ai.embedding.EmbeddingClient' available: expected single matching bean but found 2: ollamaEmbeddingClient,openAiEmbeddingClient
+25-12-05.23:27:25.738 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-12-05.23:27:25.746 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-12-05.23:27:25.759 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method vectorStore in org.springframework.ai.autoconfigure.vectorstore.pgvector.PgVectorStoreAutoConfiguration required a single bean, but 2 were found:
+	- ollamaEmbeddingClient: defined by method 'ollamaEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class]
+	- openAiEmbeddingClient: defined by method 'openAiEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/openai/OpenAiAutoConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+25-12-05.23:29:59.191 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 19624 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.23:29:59.194 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.23:29:59.797 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.23:29:59.799 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.23:29:59.821 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+25-12-05.23:30:00.358 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.23:30:00.365 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.23:30:00.367 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.23:30:00.367 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.23:30:00.463 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.23:30:00.463 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1116 ms
+25-12-05.23:30:01.033 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.23:30:01.672 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:30:02.611 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:30:03.006 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vectorStore' defined in class path resource [org/springframework/ai/autoconfigure/vectorstore/pgvector/PgVectorStoreAutoConfiguration.class]: Unsatisfied dependency expressed through method 'vectorStore' parameter 1: No qualifying bean of type 'org.springframework.ai.embedding.EmbeddingClient' available: expected single matching bean but found 2: ollamaEmbeddingClient,openAiEmbeddingClient
+25-12-05.23:30:03.017 [main            ] INFO  StandardService        - Stopping service [Tomcat]
+25-12-05.23:30:03.024 [main            ] INFO  ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+25-12-05.23:30:03.038 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method vectorStore in org.springframework.ai.autoconfigure.vectorstore.pgvector.PgVectorStoreAutoConfiguration required a single bean, but 2 were found:
+	- ollamaEmbeddingClient: defined by method 'ollamaEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/ollama/OllamaAutoConfiguration.class]
+	- openAiEmbeddingClient: defined by method 'openAiEmbeddingClient' in class path resource [org/springframework/ai/autoconfigure/openai/OpenAiAutoConfiguration.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x#parameter-name-retention)
+
+
+25-12-05.23:33:06.824 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 13140 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-05.23:33:06.826 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-05.23:33:07.264 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-05.23:33:07.266 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-05.23:33:07.293 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+25-12-05.23:33:07.640 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-05.23:33:07.648 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-05.23:33:07.650 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-05.23:33:07.651 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-05.23:33:07.720 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-05.23:33:07.720 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+25-12-05.23:33:08.205 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-05.23:33:08.705 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:33:09.418 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-05.23:33:09.884 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-05.23:33:09.894 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-05.23:33:09.900 [main            ] INFO  Application            - Started Application in 3.478 seconds (process running for 3.895)
+25-12-05.23:33:18.259 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-12-05.23:33:18.259 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-12-05.23:33:18.260 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-12-06.11:18:36.353 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 21896 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-06.11:18:36.354 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-06.11:18:37.101 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.11:18:37.105 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.11:18:37.133 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-06.11:18:37.824 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-06.11:18:37.842 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-06.11:18:37.843 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-06.11:18:37.843 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-06.11:18:37.943 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-06.11:18:37.943 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+25-12-06.11:18:38.356 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.11:18:39.487 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@4ac32df7
+25-12-06.11:18:39.488 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.11:18:43.141 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.11:18:43.737 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:18:44.442 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.11:18:44.989 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-06.11:18:44.997 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-06.11:18:45.003 [main            ] INFO  Application            - Started Application in 9.145 seconds (process running for 9.783)
+25-12-06.12:20:31.986 [HikariCP housekeeper] WARN  HikariPool             - HikariCP - Thread starvation or clock leap detected (housekeeper delta=10m21s946ms707µs).
+25-12-06.12:20:33.766 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.12:20:33.975 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.19:36:41.421 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 24160 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-06.19:36:41.423 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-06.19:36:42.211 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.19:36:42.214 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.19:36:42.243 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-12-06.19:36:42.987 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-06.19:36:43.006 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-06.19:36:43.008 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-06.19:36:43.008 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-06.19:36:43.131 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-06.19:36:43.132 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1520 ms
+25-12-06.19:36:43.600 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.19:36:44.699 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@2a9694bf
+25-12-06.19:36:44.701 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.19:36:48.493 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.19:36:49.120 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.19:36:49.870 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.19:36:50.490 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-06.19:36:50.500 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-06.19:36:50.505 [main            ] INFO  Application            - Started Application in 9.574 seconds (process running for 10.539)
+25-12-06.19:37:44.299 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-12-06.19:37:44.299 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-12-06.19:37:44.301 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-12-06.19:41:23.231 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.19:41:23.233 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.
+25-12-06.19:41:26.620 [main            ] INFO  Application            - Starting Application using Java 17.0.9 with PID 22120 (F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\target\classes started by JZ YE in F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent)
+25-12-06.19:41:26.621 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-12-06.19:41:27.310 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-06.19:41:27.312 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-06.19:41:27.336 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-12-06.19:41:27.918 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port 8090 (http)
+25-12-06.19:41:27.931 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8090"]
+25-12-06.19:41:27.933 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-12-06.19:41:27.933 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/10.1.19]
+25-12-06.19:41:28.021 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-12-06.19:41:28.021 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+25-12-06.19:41:28.358 [main            ] INFO  HikariDataSource       - HikariCP - Starting...
+25-12-06.19:41:29.423 [main            ] INFO  HikariPool             - HikariCP - Added connection org.postgresql.jdbc.PgConnection@8dec0cd
+25-12-06.19:41:29.424 [main            ] INFO  HikariDataSource       - HikariCP - Start completed.
+25-12-06.19:41:32.872 [main            ] INFO  Version                - Redisson 3.44.0
+25-12-06.19:41:33.385 [redisson-netty-1-4] INFO  ConnectionsHolder      - 1 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.19:41:35.617 [redisson-netty-1-13] INFO  ConnectionsHolder      - 5 connections initialized for 120.48.140.233/120.48.140.233:16379
+25-12-06.19:41:36.117 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8090"]
+25-12-06.19:41:36.125 [main            ] INFO  TomcatWebServer        - Tomcat started on port 8090 (http) with context path ''
+25-12-06.19:41:36.130 [main            ] INFO  Application            - Started Application in 9.957 seconds (process running for 10.5)
+25-12-06.19:41:53.813 [http-nio-8090-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-12-06.19:41:53.813 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-12-06.19:41:53.815 [http-nio-8090-exec-1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-12-06.20:36:15.373 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown initiated...
+25-12-06.20:36:15.378 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariCP - Shutdown completed.

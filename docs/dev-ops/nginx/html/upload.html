@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文件上传</title>
-    <script src="js/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* 加载动画 */
@@ -75,84 +75,84 @@
 <script>
     const fileListElement = document.querySelector('#fileList ul');
 
-     // 文件选择变更处理
-     document.getElementById('file').addEventListener('change', function (e) {
-       const files = Array.from(e.target.files);
-       fileListElement.innerHTML = ''; // 清空列表
-       files.forEach((file, index) => {
-         const listItem = document.createElement('li');
-         listItem.className = 'flex justify-between items-center';
-         listItem.innerHTML = `
+    // 文件选择变更处理
+    document.getElementById('file').addEventListener('change', function (e) {
+        const files = Array.from(e.target.files);
+        fileListElement.innerHTML = ''; // 清空列表
+        files.forEach((file, index) => {
+            const listItem = document.createElement('li');
+            listItem.className = 'flex justify-between items-center';
+            listItem.innerHTML = `
            <span>${file.name}</span>
            <button type="button" class="text-red-500 hover:text-red-700" onclick="removeFile(${index})">删除</button>
          `;
-         fileListElement.appendChild(listItem);
-       });
-     });
+            fileListElement.appendChild(listItem);
+        });
+    });
 
-     // 移除文件
-     function removeFile(index) {
-       const input = document.getElementById('file');
-       let files = Array.from(input.files);
-       files.splice(index, 1);
+    // 移除文件
+    function removeFile(index) {
+        const input = document.getElementById('file');
+        let files = Array.from(input.files);
+        files.splice(index, 1);
 
-       // 创建一个新的DataTransfer对象
-       const dataTransfer = new DataTransfer();
-       files.forEach(file => dataTransfer.items.add(file));
+        // 创建一个新的DataTransfer对象
+        const dataTransfer = new DataTransfer();
+        files.forEach(file => dataTransfer.items.add(file));
 
-       // 更新文件输入对象的文件列表
-       input.files = dataTransfer.files;
+        // 更新文件输入对象的文件列表
+        input.files = dataTransfer.files;
 
-       // 更新文件列表UI
-       const fileListItems = fileListElement.children;
-       fileListItems[index].remove();
-     }
+        // 更新文件列表UI
+        const fileListItems = fileListElement.children;
+        fileListItems[index].remove();
+    }
 
-     // 提交事件处理
-     document.getElementById('uploadForm').addEventListener('submit', function (e) {
-       e.preventDefault();
+    // 提交事件处理
+    document.getElementById('uploadForm').addEventListener('submit', function (e) {
+        e.preventDefault();
 
-       const loadingOverlay = document.getElementById('loadingOverlay');
-       const input = document.getElementById('file');
-       const files = Array.from(input.files);
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const input = document.getElementById('file');
+        const files = Array.from(input.files);
 
-       if (files.length === 0) {
-         alert('请先选择一个文件');
-         return;
-       }
+        if (files.length === 0) {
+            alert('请先选择一个文件');
+            return;
+        }
 
-       // 显示加载状态
-       loadingOverlay.classList.remove('hidden');
+        // 显示加载状态
+        loadingOverlay.classList.remove('hidden');
 
-       const formData = new FormData();
-       formData.append('ragTag', document.getElementById('title').value);
-       files.forEach(file => formData.append('file', file));
+        const formData = new FormData();
+        formData.append('ragTag', document.getElementById('title').value);
+        files.forEach(file => formData.append('file', file));
 
-       axios.post('http://localhost:8090/api/v1/rag/file/upload', formData)
-         .then(response => {
-           if (response.data.code === '0000') {
-             // 成功提示并关闭窗口
-             setTimeout(() => {
-               alert('上传成功，窗口即将关闭');
-               window.close();
-             }, 500);
-           } else {
-             throw new Error(response.data.info || '上传失败');
-           }
-         })
-         .catch(error => {
-           alert(error.message);
-         })
-         .finally(() => {
-           // 隐藏加载状态
-           loadingOverlay.classList.add('hidden');
+        axios.post('http://localhost:8090/api/v1/rag/file/upload', formData)
+            .then(response => {
+                if (response.data.code === '0000') {
+                    // 成功提示并关闭窗口
+                    setTimeout(() => {
+                        alert('上传成功，窗口即将关闭');
+                        window.close();
+                    }, 500);
+                } else {
+                    throw new Error(response.data.info || '上传失败');
+                }
+            })
+            .catch(error => {
+                alert(error.message);
+            })
+            .finally(() => {
+                // 隐藏加载状态
+                loadingOverlay.classList.add('hidden');
 
-           // 清空表单（无论成功与否）
-           input.value = '';
-           document.getElementById('title').value = '';
-           fileListElement.innerHTML = '';
-         });
-     });
+                // 清空表单（无论成功与否）
+                input.value = '';
+                document.getElementById('title').value = '';
+                fileListElement.innerHTML = '';
+            });
+    });
 </script>
 </body>
 </html>

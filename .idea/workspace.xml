@@ -26,6 +26,7 @@
         <entry key="$PROJECT_DIR$" value="7-stream-rag-ui" />
       </map>
     </option>
+    <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -65,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "9-OpenAI-api",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "F:/CODE/JAVA/program/xfg/ai-rag-knowledge/AI_agent/docs/dev-ops/nginx/html",
     "node.js.detected.package.eslint": "true",
@@ -91,11 +92,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\docs\dev-ops\nginx\html" />
+      <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\docs\dev-ops\nginx" />
       <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\docs\dev-ops\pgvector" />
       <recent name="F:\CODE\JAVA\program\xfg\ai-rag-knowledge\AI_agent\xfg-dev-tech-app\src\main\java\cn\bugstack\xfg\dev\tech\config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JGitTest.test_file">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="JGitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xfg-dev-tech-app" />
       <extension name="coverage">
@@ -201,7 +203,7 @@
       <workItem from="1764818261615" duration="1619000" />
       <workItem from="1764819907906" duration="15303000" />
       <workItem from="1765009166194" duration="7163000" />
-      <workItem from="1765529149872" duration="5928000" />
+      <workItem from="1765529149872" duration="10812000" />
     </task>
     <task id="LOCAL-00001" summary="初始">
       <option name="closed" value="true" />
@@ -251,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765529986361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="第八节 Git代码库解析">
+      <option name="closed" value="true" />
+      <created>1765543724282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765543724282</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +296,7 @@
     <MESSAGE value="第四节 Ollama DeepSeek Ai构建简单页面" />
     <MESSAGE value="第六节: Ollama RAG 知识库接口服务实现" />
     <MESSAGE value="第七节: 基于AI工具,对接接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="第七节: 基于AI工具,对接接口" />
+    <MESSAGE value="第八节 Git代码库解析" />
+    <option name="LAST_COMMIT_MESSAGE" value="第八节 Git代码库解析" />
   </component>
 </project>

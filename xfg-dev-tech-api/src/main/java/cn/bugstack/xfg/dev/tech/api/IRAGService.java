@@ -12,6 +12,6 @@ public interface IRAGService {
 
     Response<String> uploadFile(String ragTag,List<MultipartFile> files);
 
-    Response<String> analyzeGitRepository(String repoURL,String username,String token) throws IOException, GitAPIException, GitAPIException, Exception;
+    Response<String> analyzeGitRepository(String repoURL,String username,String token) throws IOException,Exception;
 
 }
